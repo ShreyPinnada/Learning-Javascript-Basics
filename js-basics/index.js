@@ -1,16 +1,36 @@
-//DYNAMIC TYPING
+//REFERENCE TYPES
+// Object
+// Array
+// Function
 
-//JS is a dynamic language i.e unlike static languages
-// say we declare let name = string we can change the value to anything during runtime
 
-/*typeof name
-'string'
-name = 1
-1
-typeof name
-'number'*/
+//Objects
 
-// in js theres no int or float all of them come under numbers
+let person = {
+    name: 'Shrey',
+    age: 30
+};              // {} is called an object literal , there will be key value pairs , the keys are called the properties of the object
 
-//undefined is also a value and type both
-//type of null will be an object
+console.log(person);
+
+//there are two ways to work with this person object
+
+//first way is DOT NOTATION
+person.name = 'Shashank'
+
+console.log(person);
+console.log(person.name);
+
+//second way is BRACKET NOTATION
+person['name'] = 'Mary';
+
+console.log(person.name);
+
+// so which one is better
+// dot notation is cleaner and more consise do it should be your default choice
+// but bracket has a use case where we may not know the property eg:-
+
+let selection = 'name';
+person[selection] = 'John';
+
+console.log(person.name);
