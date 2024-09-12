@@ -1,17 +1,16 @@
-//we have two types
-// 1. PRIMITIVE TYPES / value types
-// 2. REFERENCE TYPES
+//DYNAMIC TYPING
 
-//  PRIMITIVES:
-// Strings
-// numbers
-// undefined
-// boolean
-// null
+//JS is a dynamic language i.e unlike static languages
+// say we declare let name = string we can change the value to anything during runtime
 
-let name = 'Shrey'; //String literal
-let age = 30; //number literal
-let isApproved = true; // boolean literal
-let firstName; // default value is undefined we can also declare it as let firstname = undefined;
-let lastName = null; // usually used when we want to clear the value of the variable say clearing color
+/*typeof name
+'string'
+name = 1
+1
+typeof name
+'number'*/
 
+// in js theres no int or float all of them come under numbers
+
+//undefined is also a value and type both
+//type of null will be an object
