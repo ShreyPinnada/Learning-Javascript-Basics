@@ -4,33 +4,17 @@
 // Function
 
 
-//Objects
+//Arrays
+let selectedColors = ['red','blue']; // [] empty array [] is the array literal
+console.log(selectedColors[0]);
 
-let person = {
-    name: 'Shrey',
-    age: 30
-};              // {} is called an object literal , there will be key value pairs , the keys are called the properties of the object
+//in js the length and the type of objects in array are dynamic as js is a dynamic language
 
-console.log(person);
+selectedColors[2] = 'green';
+console.log(selectedColors);
 
-//there are two ways to work with this person object
+selectedColors[3] = 1;
+console.log(selectedColors);
 
-//first way is DOT NOTATION
-person.name = 'Shashank'
-
-console.log(person);
-console.log(person.name);
-
-//second way is BRACKET NOTATION
-person['name'] = 'Mary';
-
-console.log(person.name);
-
-// so which one is better
-// dot notation is cleaner and more consise do it should be your default choice
-// but bracket has a use case where we may not know the property eg:-
-
-let selection = 'name';
-person[selection] = 'John';
-
-console.log(person.name);
+//to see all properties in array in js just put a dot and it will show a list of operations available
+console.log(selectedColors.length);
