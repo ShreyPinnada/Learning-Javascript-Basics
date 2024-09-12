@@ -1,23 +1,12 @@
-//before es6 we used 'var' but it has some issues
+let interestRate = 0.3;
+interestRate = 1;
+console.log(interestRate);
+//obviously we will be able to see the new interestRate
 
-//going forward from es6 we use the 'let' keyword as the best practice
+//say we dont want a value in variable to change we use constant
+const interest = 0.4;
+interest = 8;
+console.log(interest);
+//this will result in an error
 
-let name = 'Shrey';
-console.log(name);
-
-//rules for variable names we already know
-// Cannot be a reserved keyword
-//Should be meaningful
-// Cannot start with a number
-// Cannot contain a space or hyphen
-// Case Sensititve
-
-//some valid variable declarations are given below:
-
-let firstName; //better to use Camel case
-
-//decalring multiple variables
-let first = 'shrey' , last = 'pinnada';
-//modern best practice is to have in seperate lines
-let firstN = 'shrey';
-let lastN = 'pinnada';
+//BEST PRACTICE: if you dont want a value to change use const else use let
