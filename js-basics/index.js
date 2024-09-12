@@ -1,12 +1,17 @@
-let interestRate = 0.3;
-interestRate = 1;
-console.log(interestRate);
-//obviously we will be able to see the new interestRate
+//we have two types
+// 1. PRIMITIVE TYPES / value types
+// 2. REFERENCE TYPES
 
-//say we dont want a value in variable to change we use constant
-const interest = 0.4;
-interest = 8;
-console.log(interest);
-//this will result in an error
+//  PRIMITIVES:
+// Strings
+// numbers
+// undefined
+// boolean
+// null
 
-//BEST PRACTICE: if you dont want a value to change use const else use let
+let name = 'Shrey'; //String literal
+let age = 30; //number literal
+let isApproved = true; // boolean literal
+let firstName; // default value is undefined we can also declare it as let firstname = undefined;
+let lastName = null; // usually used when we want to clear the value of the variable say clearing color
+
