@@ -1,16 +1,20 @@
-//REFERENCE TYPES
-// Object
-// Array
-// Function
+//TYPES OF FUNCITONS
 
-
-//FUNCTIONS
-
+//performing a task
 function greet(name , lastName) {
     console.log('Hello '+name +' '+lastName);
 }
 
 greet('Shrey','Pinnada');
-greet('Shashank')
 
-// if you dont values to the params you will get undefined as default
+//Calculating a value
+function square(number)
+{
+    return number*number;
+}
+
+let number = square(16);
+console.log(number);
+console.log(square(16));
+
+//here we have 2 function calls one is the functions we created and the other is the console.log()
